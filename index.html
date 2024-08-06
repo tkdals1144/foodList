@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <main>
+        <div id="plus_wrap">
+            <button id="plus" onclick="plus()">추가하기</button>
+        </div>
+        <table id="table">
+            <tr>
+                <th id="th1">티어</th>
+                <th id="th2">종류</th>
+                <th id="th3">음식점명</th>
+                <th id="th4">특징</th>
+            </tr>
+            <tr>
+                <td>S</td>
+                <td>일식</td>
+                <td>혼카츠</td>
+                <td>맛있는 돈까스가 일품</td>
+            </tr>
+        </table>
+        <div id="input_box_wrap">
+            <div class="input_box">
+                <label for="tier">
+                    <span>등급 : </span>
+                    <select name="tier" id="tier">
+                        <option value="default">선택</option>
+                        <option value="S">S</option>
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="F">F</option>
+                    </select>
+                </label>
+            </div>
+            <div class="input_box">
+                <label for="type">
+                    <span>종류 : </span>
+                    <select name="type" id="type">
+                        <option value="default">선택</option>
+                        <option value="한식">한식</option>
+                        <option value="일식">일식</option>
+                        <option value="중식">중식</option>
+                        <option value="양식">양식</option>
+                    </select>
+                </label>
+            </div>
+            <div class="input_box">
+                <label for="name">
+                    <span>음식점명 : </span>
+                    <input type="text" id="name" placeholder="음식점명을 입력해주세요">
+                </label>
+            </div>
+            <div class="input_box">
+                <label for="point">
+                    <p>특징</p>
+                    <textarea id="point" placeholder="특징을 입력해주세요"></textarea>
+                </label>
+            </div>
+            <div id="btn_wrap">
+                <button onclick="confirmItem()">확인</button>
+                <button onclick="cancleItem()">취소</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
